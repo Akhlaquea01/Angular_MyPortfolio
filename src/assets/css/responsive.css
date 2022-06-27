@@ -10,7 +10,7 @@
 		margin-bottom:20px;
 	}
 	.next-section {
-	/*	bottom: auto; */
+		bottom: auto;
 	}
 	.welcome-title:before {
 		margin: 20px auto 5px;
