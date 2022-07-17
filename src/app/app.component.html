@@ -1,47 +1,30 @@
-<div id="video">
-	<div class="preloader">
-		<div class="preloader-bounce">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
+<!-- Header Section -->
+<app-header></app-header>
 
-	<!-- Header Section -->
-	<app-header></app-header>
+<div>
 
-	<!-- Background Video -->
-	<video autoplay muted loop id="myVideo">
-		<source src="assets/images/video-bg.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	</video>
+	<!-- Home Page -->
+	<app-home-section id="slide01"></app-home-section>
 
-	<div id="fullpage" class="fullpage-default">
+	<!-- About Section -->
+	<app-about-section id="slide02"></app-about-section>
 
-		<!-- Home Page -->
-		<app-home-section class="section animated-row" data-section="slide01"></app-home-section>
+	<!-- Experience Section -->
+	<app-experiance-section id="slide03"></app-experiance-section>
 
-		<!-- About Section -->
-		<app-about-section class="section animated-row" data-section="slide02"></app-about-section>
+	<!-- Skills Section -->
+	<app-my-skills id="slide04"></app-my-skills>
 
-		<!-- Experience Section -->
-		<app-services-section class="section animated-row" data-section="slide03"></app-services-section>
+	<!-- Testimonials/Review -->
+	<app-testimonials-section id="slide05"></app-testimonials-section>
 
-		<!-- Skills Section -->
-		<app-my-skills class="section animated-row" data-section="slide04"></app-my-skills>
+	<!-- Personal Projects -->
+	<app-my-work-section id="slide06"></app-my-work-section>
 
-		<!-- Testimonials/Review -->
-		<app-testimonials-section class="section animated-row" data-section="slide05"></app-testimonials-section>
+	<!-- Contacts and Feedback -->
+	<app-contact-section id="slide07"></app-contact-section>
 
-		<!-- Personal Projects -->
-		<app-my-work-section class="section animated-row" data-section="slide06"></app-my-work-section>
-
-		<!-- Contacts and Feedback -->
-		<app-contact-section class="section animated-row" data-section="slide07"></app-contact-section>
-
-	</div>
-
-	<!-- Social Media links -->
-	<app-social-section id="social-icons"></app-social-section>
 </div>
-<router-outlet></router-outlet>
+
+<!-- Social Media links -->
+<app-social-section></app-social-section>
