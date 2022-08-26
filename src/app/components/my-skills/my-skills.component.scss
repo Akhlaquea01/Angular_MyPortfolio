@@ -1,0 +1,163 @@
+// .slick-slide{
+//     margin: 0 20px;
+// }
+// .slick-slide img{
+//     width: 100%;
+// }
+// .slick-slider{
+//     position: relative;
+//     display: block;
+//     box-sizing: border-box;
+// }
+// .slick-list{
+//     position: relative;
+//     display: block;
+//     overflow: hidden;
+//     margin: 0;
+//     padding: 0;
+// }
+// .slick-track{
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     display: block
+// }
+// .slick-slide{
+//     display: none;
+//     float: left;
+//     height: 100%;
+//     min-height: 1px;
+// }
+// .slick-slide img{
+//     display: block;
+// }
+// .slick-initialized .slick-slide{
+//     display: block !important;
+// }
+// .copy{
+//     padding-top: 250px;
+// }
+
+body {
+	align-items: center;
+	background: #E3E3E3;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.skills-carousel {
+    margin: 50px 0px;
+}
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+
+// / RESPONSIVE CSS /
+
+// /----------------------------- Large Screens -------------------------------/
+
+
+@media only screen and (max-width :1700px) and (min-width: 1367px) {
+    
+    
+    
+}
+
+@media only screen and (max-width :1366px) and (min-width: 1281px) {
+
+    
+
+}
+
+// /----------------------------- Small Laptop -------------------------------/
+@media only screen and (max-width :1280px) and (min-width: 1101px) {
+    
+    
+
+}
+
+// /----------------------------- Media 1024 -------------------------------/
+@media only screen and (max-width :1100px){
+
+
+    
+}
+
+
+// /----------------------------- Media 768 -------------------------------/
+@media only screen and (max-width:999px){
+}
+
+// /----------------------------- Media 480 -------------------------------/
+@media only screen and (max-width:767px){
+	section#my-skills h1 {
+		font-size: 40px;
+	}
+	section#testimonail h1{
+		font-size:40px;
+		
+	}
+    
+    
+
+}
+
+
+// /----------------------------- Media 320 -------------------------------/
+@media only screen and (max-width:479px){
+    
+    
+}

@@ -12,6 +12,8 @@ import { MySkillsComponent } from './components/my-skills/my-skills.component';
 import { MyWorkSectionComponent } from './components/my-work-section/my-work-section.component';
 import { SocialSectionComponent } from './components/social-section/social-section.component';
 import { TestimonialsSectionComponent } from './components/testimonials-section/testimonials-section.component';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { SwiperModule } from "swiper/angular";
 
 @NgModule({
   declarations: [
@@ -25,8 +27,14 @@ import { TestimonialsSectionComponent } from './components/testimonials-section/
     TestimonialsSectionComponent,
     ContactSectionComponent,
     SocialSectionComponent,
+    
+    
+    
+    
+    
+    
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, SwiperModule ],
   providers: [],
   bootstrap: [AppComponent],
 })
