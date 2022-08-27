@@ -113,6 +113,7 @@ section#work-experience h1 {
 .timeline ul li p{
   margin: 10px 0 0;
   padding: 0;
+  color: #6c6565;
 }
 .timeline ul li .time h4{
   padding: 0;
@@ -195,6 +196,15 @@ section#work-experience h1 {
   }
   .timeline {
     width:100%
+  }
+  .timeline ul li:nth-child(1) .time {
+    right: -160px;
+  }
+  .timeline ul li:nth-child(2) .time {    
+    left: -233px;   
+  }
+  .timeline ul li:nth-child(3) .time {
+    right: -216px;
   }
 }
 

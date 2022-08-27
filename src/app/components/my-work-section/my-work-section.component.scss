@@ -1,8 +1,8 @@
-.gallery-image {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.gallery-image {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  grid-gap: 20px;
   }
   
   .gallery-image img {
@@ -105,11 +105,12 @@
 
 // /----------------------------- Media 768 -------------------------------/
 @media only screen and (max-width:999px){
-  .gallery-image {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+  .gallery-image {    
+    grid-template-columns: repeat(2, 1fr);    
   }
+  .img-box {
+    width: auto !important;
+  } 
 }
 
 // /----------------------------- Media 480 -------------------------------/
@@ -120,6 +121,10 @@
   section#my-work h1{
     font-size:40px;
   }
+  .img-box {
+    text-align: center;
+  } 
+  
     
     
 
