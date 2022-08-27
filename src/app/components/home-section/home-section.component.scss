@@ -1,18 +1,17 @@
 #home {
-    width: 100%;
-    height: 100vh;
-    background: top center;
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background: top center;
+  background-size: cover;
 }
-.home-banner{
+.home-banner {
   background: #f3f8fc !important ;
-  float:left;
-  width:100%;
-  
+  float: left;
+  width: 100%;
 }
-.home-banner p {   
-    width: 80%;
-    margin: 40px 0px;
+.home-banner p {
+  width: 80%;
+  margin: 40px 0px;
 }
 .hme-lft {
   float: left;
@@ -24,12 +23,11 @@
   width: 40%;
   margin: 150px 0px;
 }
-.hme-lft span{
-  color:#7248ff;
-
+.hme-lft span {
+  color: #7248ff;
 }
-.typed{
-  font-weight:bold;
+.typed {
+  font-weight: bold;
 }
 button.bttn {
   background: #7248ff;
@@ -38,13 +36,12 @@ button.bttn {
   border-radius: 2rem;
   color: #fff;
   font-family: roboto;
-  
 }
 :root {
-	--background: #005;
-	--primary: #88D5BF;
-	--secondary: #5D6BF8;
-	--third: #e27fcb;
+  --background: #005;
+  --primary: #88d5bf;
+  --secondary: #5d6bf8;
+  --third: #e27fcb;
 }
 
 * {
@@ -55,39 +52,23 @@ body {
   background: #005;
 }
 
-// .container {
-//   align-items: center;
-//   display: flex;
-//   height: 100vh;
-//   justify-content: center;
-// }
-
 .shape {
- 	// background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-   background: #7248ff;
-//   animation: morph 8s ease-in-out infinite;
+  background: #7248ff;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   height: 400px;
   transition: all 1s ease-in-out;
   width: 400px;
   z-index: 5;
-  position:relative
+  position: relative;
 }
-// .shape:before,
-// .shape:after {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   z-index: -1;
-//   left: 0;
-// }
-.shape:before{
+
+.shape:before {
   content: "";
   position: absolute;
   width: 100%;
-  z-index: -1;  
+  z-index: -1;
   background: url("/assets/images/My project.png") center center / cover;
-  width:-229%;  
+  width: -229%;
   left: -22px;
   top: -454px;
   height: 368%;
@@ -95,133 +76,119 @@ body {
 
 @keyframes morph {
   0% {
-			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-			background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-	} 
-	
-	50% {
-			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
-			background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
-	}
-  
-	100% {
-		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-		background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
-	} 
-}
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(
+      45deg,
+      var(--primary) 0%,
+      var(--secondary) 100%
+    );
+  }
 
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(
+      45deg,
+      var(--primary) 0%,
+      var(--secondary) 100%
+    );
+  }
+}
 
 // / RESPONSIVE CSS /
 
 // /----------------------------- Large Screens -------------------------------/
 
-
-@media only screen and (max-width :1700px) and (min-width: 1367px) {
-    
-    
-    
+@media only screen and (max-width: 1700px) and (min-width: 1367px) {
 }
 
-@media only screen and (max-width :1366px) and (min-width: 1281px) {
-
-    
-
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
 }
 
 // /----------------------------- Small Laptop -------------------------------/
-@media only screen and (max-width :1280px) and (min-width: 1101px) {
-    
-    
-
+@media only screen and (max-width: 1280px) and (min-width: 1101px) {
 }
 
 // /----------------------------- Media 1024 -------------------------------/
-@media only screen and (max-width :1100px){
-  .hme-lft {    
+@media only screen and (max-width: 1100px) {
+  .hme-lft {
     width: 55% !important;
   }
-  .hme-right {   
+  .hme-right {
     width: 45% !important;
   }
   .shape:before {
     top: -391px;
     height: 315%;
   }
-
-
-    
 }
-
 
 // /----------------------------- Media 768 -------------------------------/
-@media only screen and (max-width:999px){
+@media only screen and (max-width: 999px) {
   .hme-lft h1 {
     font-size: 30px;
-}
-.hme-lft h2 {
-  font-size: 25px;
-}
-.shape:before {
-  top: -307px;
-  height: 338%;
-}
-#home {
-  width: 100%;
-  height: 90vh;
-  background: top center;
-  background-size: cover;
-}
-.shape {
-  background: #7248ff;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  height: 310px;
-  transition: all 1s ease-in-out;
-  width: 310px;
-  z-index: 5;
-  position: relative;
-}
-.hme-right {
-  width: 48% !important;
-}
-.hme-lft {
-  width: 45% !important;
-}
-.home-banner p {
-  width:100% !important;  
-  font-size: 15px;
-}
+  }
+  .hme-lft h2 {
+    font-size: 25px;
+  }
+  .shape:before {
+    top: -307px;
+    height: 338%;
+  }
+  #home {
+    width: 100%;
+    height: 90vh;
+    background: top center;
+    background-size: cover;
+  }
+  .shape {
+    background: #7248ff;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 310px;
+    transition: all 1s ease-in-out;
+    width: 310px;
+    z-index: 5;
+    position: relative;
+  }
+  .hme-right {
+    width: 48% !important;
+  }
+  .hme-lft {
+    width: 45% !important;
+  }
+  .home-banner p {
+    width: 100% !important;
+    font-size: 15px;
+  }
 }
 
 // /----------------------------- Media 480 -------------------------------/
-@media only screen and (max-width:767px){
+@media only screen and (max-width: 767px) {
   .hme-lft {
     float: none !important;
     width: 100% !important;
-    text-align:center;
-    
+    text-align: center;
+  }
+  .hme-right {
+    float: none !important;
+    width: 100% !important;
+    margin: 0px !important;
+  }
+  #home {
+    height: 159vh;
+  }
+  .shape {
+    width: 400px;
+  }
 }
-.hme-right {
-  float: none !important;
-  width: 100% !important;
-  margin:0px !important;
-}
-#home{
-  height: 159vh;
-}
-.shape {
-  width: 400px;
-}
-    
-    
-
-}
-
 
 // /----------------------------- Media 320 -------------------------------/
-@media only screen and (max-width:479px){
+@media only screen and (max-width: 479px) {
   .shape {
-    width: 300px; 
-}
-    
-    
+    width: 300px;
+  }
 }

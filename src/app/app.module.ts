@@ -14,6 +14,8 @@ import { SocialSectionComponent } from './components/social-section/social-secti
 import { TestimonialsSectionComponent } from './components/testimonials-section/testimonials-section.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { SwiperModule } from "swiper/angular";
+import { MyInfoService } from './services/my-info.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,15 +29,15 @@ import { SwiperModule } from "swiper/angular";
     TestimonialsSectionComponent,
     ContactSectionComponent,
     SocialSectionComponent,
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule ],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, SwiperModule,HttpClientModule ],
+  providers: [MyInfoService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

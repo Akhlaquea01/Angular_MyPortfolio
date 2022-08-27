@@ -1,48 +1,18 @@
-<!-- <div class="">
-	
-</div> -->
-
-
-<!-- <section class="d-flex flex-column justify-content-center align-items-center">
-	<div class="container">
-		<span class="mt-3">Hello, I am</span>
-		<h1>Akhlaque</h1>
-		<p class="mt-3">This Website is Highly organized and detail-oriented Resume
-			of a full stack developer having one year of experience as a Angular Developer that
-			provide me an opportunity to prove myself and polish my skills through challenging tasks.
-			Thank you!</p>
-		<Button>Download Resume </Button>
-	</div>
-
-</section> -->
-
-
 <div id="home" class=" home-banner">
 	<div class="container">
 		<div class="hme-lft">
-			<h1 class="mt-3">Hello, I am <span>Akhlaque</span></h1>
-		<h2><span class="typed"></span></h2>
-		<p >This Website is Highly organized and detail-oriented Resume
-			of a full stack developer having one year of experience as a Angular Developer that
-			provide me an opportunity to prove myself and polish my skills through challenging tasks.
-			Thank you!</p>
-		<button type="button" class=" init-animate fadeInDown bttn">Download Resume</button>
+			<h1 class="mt-3">Hello, I am <span>{{myData?.name.split(' ')[0]}}</span></h1>
+			<h2><span class="typed"></span></h2>
+			<p>This Website is Highly organized and detail-oriented Resume
+				of a full stack developer having one and half year of experience as a Angular Developer that
+				provide me an opportunity to prove myself and polish my skills through challenging tasks.
+				Thank you!</p>
+			<button type="button" class=" init-animate fadeInDown bttn" (click)="resumeDownload()">Download Resume</button>
 
 		</div>
 
-		<div class="hme-right">	
-			<div class="shape">
-				
-
-			</div>	
-			
-			<!-- <img src="assets/images/My project.png" alt=""> -->
-			
+		<div class="hme-right">
+			<div class="shape"></div>
 		</div>
-			
-		
-	
-		
-		
 	</div>
 </div>

@@ -1,0 +1,160 @@
+{
+    "BankDetails": [
+        {
+            "accountNo": "50100367887641",
+            "branch": "Kalambagh",
+            "ifscCode": "HDFC0002726",
+            "name": "HDFC Bank"
+        },
+        {
+            "accountNo": "59108797247279",
+            "branch": "Kalambagh",
+            "ifscCode": "HDFC0002726",
+            "name": "HDFC Bank"
+        },
+        {
+            "accountNo": "6122108000384",
+            "branch": "Chandwara",
+            "ifscCode": "CNRB0006122",
+            "name": "Canara Bank"
+        },
+        {
+            "accountNo": "918797247279",
+            "branch": "Bangalore",
+            "ifscCode": "PYTM0123456",
+            "name": "Paytm Bank"
+        }
+    ],
+    "aadharNo": "637082701866",
+    "about": "",
+    "birthday": "14/09/1999",
+    "bloodGroup": "B+",
+    "contact": {
+        "address": {
+            "block": "Mushari",
+            "city": "Muzaffarpur",
+            "country": "India",
+            "fullAddress": "MN001 0113, Alam Cottage, Mehta Compound, Azad Road, Chandwara, Muzaffarpur, Bihar",
+            "houseName": "Alam Cottage",
+            "houseNumber": "MN001 0113",
+            "landmark": "Jail Chowk Petrol Pump",
+            "locality": "Chandwara",
+            "postalCode": "842001",
+            "state": "Bihar",
+            "street": "Azad Road"
+        },
+        "altEmail": "akhlaquea01@yahoo.com",
+        "altNumber": "+91 9931209807",
+        "email": "akhlaquea01@gmail.com",
+        "mobile": "+91 8797247279",
+        "website": "https://ekhlaque.netlify.app/"
+    },
+    "education": [
+        {
+            "secondarySchool": {
+                "board": "Central Board Of Secondary Education",
+                "degree": "Matric",
+                "location": "",
+                "name": "Sacred Heart School",
+                "result": "9.2 CGPA",
+                "session": "2013-14"
+            }
+        },
+        {
+            "intermediateSchool": {
+                "board": "Bihar School Examination Board",
+                "degree": "Inter",
+                "location": "Muzaffarpur, Bihar",
+                "name": "K. R. BOSE SMARAK COLLEGE",
+                "result": "63%",
+                "session": "2015-16"
+            }
+        },
+        {
+            "graduation": {
+                "board": "Abdul Kalam Technical University",
+                "branch": "Computer Science & Engineering",
+                "degree": "B.Tech",
+                "location": "Greater Noida, Uttar Pradesh",
+                "name": "Vishveshwarya Group Of Institutions",
+                "result": "7.2 CGP",
+                "session": "2016-2020"
+            }
+        }
+    ],
+    "hobbies": [
+        "Playing Games",
+        "Reading Books",
+        "Exploring Technologies"
+    ],
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/iam-atts.appspot.com/o/profile.jpg?alt=media&token=49022064-5498-45f4-b09c-2dd0cedaf932",
+    "intrests": {
+        "books": "",
+        "food": "",
+        "movies": "",
+        "music": "",
+        "sports": "",
+        "travel": ""
+    },
+    "job": {
+        "company": "Zycus Infotech",
+        "companyEmail": "akhlaque.ahmad@zycus.com",
+        "jobDescription": "Working as an Angular Developer",
+        "jobTitle": "Associate Software Engineer"
+    },
+    "languages": [
+        "Hindi",
+        "English",
+        "Urdu",
+        "Sanskrit"
+    ],
+    "name": "Akhlaque Ahmad",
+    "panNo": "BWKPA5194E",
+    "passportNo": "",
+    "resume": "https://firebasestorage.googleapis.com/v0/b/iam-atts.appspot.com/o/Resume%20Atts.pdf?alt=media&token=2a772569-50ca-4df8-ba1c-dc79eaa6c268",
+    "skills": {
+        "level": [
+            "Intermediate",
+            "Beginner",
+            "Expert",
+            "Advanced",
+            "Proficient",
+            "Intermediate",
+            "Intermediate",
+            "Intermediate",
+            "Intermediate",
+            "Beginner",
+            "Beginner",
+            "Master",
+            "Master",
+            "Intermediate"
+        ],
+        "skill": [
+            "Python",
+            "C",
+            "JavaScript",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JQuery",
+            "NodeJs",
+            "MongoDb",
+            "React",
+            "Angular",
+            "GitHub",
+            "Office"
+        ]
+    },
+    "socialMedia": {
+        "facebook": "https://m.facebook.com/akhlaque140999",
+        "github": "https://github.com/Akhlaquea01",
+        "instagram": "https://www.instagram.com/iam_atts_/",
+        "linkedin": "https://www.linkedin.com/in/iam-atts/",
+        "skype": "live:akhlaquea01",
+        "telegram": "@iam_atts",
+        "twitter": "https://twitter.com/iam_atts_",
+        "whatsapp": "+91-8797247279",
+        "youtube": "https://www.youtube.com/channel/UCnSxC87V29fH64re0B8N4wA"
+    }
+}
