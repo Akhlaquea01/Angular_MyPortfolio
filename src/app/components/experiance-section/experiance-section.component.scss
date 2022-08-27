@@ -1,29 +1,28 @@
-#work-experience{
-    background: #f3f8fc;
+#work-experience {
+  background: #f3f8fc;
 }
 section#work-experience h1 {
-    margin: 50px;
-    text-align: center;
-    color: #666;
-    font-size: 50px;
-    font-weight: 600;
+  margin: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 50px;
+  font-weight: 600;
 }
-.timeline{
+.timeline {
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
   width: 1000px;
 }
-.timeline:before{
+.timeline:before {
   content: "";
   position: absolute;
-  left: 50%;  
-  height: 90%;  
+  left: 50%;
+  height: 90%;
   width: 4px;
   background: #efefef;
-
 }
-.timeline ul{
+.timeline ul {
   margin: 0;
   padding: 0;
 }
@@ -34,18 +33,18 @@ section#work-experience h1 {
   padding: 20px 40px;
   box-sizing: border-box;
 }
-.timeline ul li:nth-child(odd){
-  float: left; 
+.timeline ul li:nth-child(odd) {
+  float: left;
   clear: both;
 }
-.timeline ul li:nth-child(even){
-  float: right;  
+.timeline ul li:nth-child(even) {
+  float: right;
   clear: both;
 }
-.content p{
+.content p {
   color: #000;
 }
-.content{
+.content {
   padding-bottom: 20px;
   position: relative;
   background: #fff;
@@ -53,10 +52,9 @@ section#work-experience h1 {
   box-shadow: 0 1px 7px rgb(0 0 0 / 1%);
   padding: 1em;
   margin-bottom: 20px;
-  
 }
-.timeline ul li:nth-child(odd) .content:before{
-  content: '';
+.timeline ul li:nth-child(odd) .content:before {
+  content: "";
   position: absolute;
   top: 10px;
   left: 100%;
@@ -64,10 +62,9 @@ section#work-experience h1 {
   width: 0;
   border: 10px solid transparent;
   border-left: 10px solid #fff;
-  
 }
-.timeline ul li:nth-child(even) .content:before{
-  content: '';
+.timeline ul li:nth-child(even) .content:before {
+  content: "";
   position: absolute;
   top: 10px;
   right: 100%;
@@ -75,25 +72,25 @@ section#work-experience h1 {
   width: 0;
   border: 10px solid transparent;
   border-right: 10px solid #fff;
-  
 }
-.timeline ul li:nth-child(1):before{
+.timeline ul li:nth-child(1):before {
   background: #7248ff;
 }
-.timeline ul li:nth-child(3):before{
+.timeline ul li:nth-child(3):before {
   background: #ccc;
 }
-.timeline ul li:nth-child(odd):before{
+.timeline ul li:nth-child(odd):before {
   content: "";
   position: absolute;
   top: 24px;
   right: -17px;
   width: 30px;
   height: 30px;
-  border-radius: 50%;  
-  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%);
 }
-.timeline ul li:nth-child(even):before{
+.timeline ul li:nth-child(even):before {
   content: "";
   position: absolute;
   top: 24px;
@@ -102,38 +99,39 @@ section#work-experience h1 {
   height: 30px;
   border-radius: 50%;
   background: #ccc;
-  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%);
 }
-.timeline ul li h3{
+.timeline ul li h3 {
   margin: 0;
   padding: 0;
-  font-weight:600;
+  font-weight: 600;
   color: #666;
 }
-.timeline ul li p{
+.timeline ul li p {
   margin: 10px 0 0;
   padding: 0;
   color: #6c6565;
 }
-.timeline ul li .time h4{
+.timeline ul li .time h4 {
   padding: 0;
   margin: 0;
   font-size: 14px;
 }
-.timeline ul li:nth-child(1) .time{
+.timeline ul li:nth-child(1) .time {
   right: -176px;
 }
-.timeline ul li:nth-child(2) .time{
+.timeline ul li:nth-child(2) .time {
   top: 25px;
   left: -263px;
   text-align: right;
 }
-.timeline ul li:nth-child(3) .time{
+.timeline ul li:nth-child(3) .time {
   right: -236px;
 }
-.timeline ul li:nth-child(odd) .time{
+.timeline ul li:nth-child(odd) .time {
   position: absolute;
-  top: 21px;  
+  top: 21px;
   margin: 0;
   // padding: 8px 16px;
   // background: rgba(233,33,99,1);
@@ -142,8 +140,8 @@ section#work-experience h1 {
   text-align: left;
   line-height: 20px;
 }
-.timeline ul li:nth-child(even) .time{
-  position: absolute;    
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
   margin: 0;
   // padding: 8px 16px;
   // background: rgba(233,33,99,1);
@@ -152,42 +150,26 @@ section#work-experience h1 {
   line-height: 20px;
 }
 
-
-
 // / RESPONSIVE CSS /
 
 // /----------------------------- Large Screens -------------------------------/
 
-
-@media only screen and (max-width :1700px) and (min-width: 1367px) {
-    
-    
-    
+@media only screen and (max-width: 1700px) and (min-width: 1367px) {
 }
 
-@media only screen and (max-width :1366px) and (min-width: 1281px) {
-
-    
-
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
 }
 
 // /----------------------------- Small Laptop -------------------------------/
-@media only screen and (max-width :1280px) and (min-width: 1101px) {
-    
-    
-
+@media only screen and (max-width: 1280px) and (min-width: 1101px) {
 }
 
 // /----------------------------- Media 1024 -------------------------------/
-@media only screen and (max-width :1100px){
-
-
-    
+@media only screen and (max-width: 1100px) {
 }
 
-
 // /----------------------------- Media 768 -------------------------------/
-@media only screen and (max-width:999px){
+@media only screen and (max-width: 999px) {
   .timeline ul li p {
     font-size: 14px;
   }
@@ -195,13 +177,13 @@ section#work-experience h1 {
     font-size: 20px;
   }
   .timeline {
-    width:100%
+    width: 100%;
   }
   .timeline ul li:nth-child(1) .time {
     right: -160px;
   }
-  .timeline ul li:nth-child(2) .time {    
-    left: -233px;   
+  .timeline ul li:nth-child(2) .time {
+    left: -233px;
   }
   .timeline ul li:nth-child(3) .time {
     right: -216px;
@@ -209,52 +191,53 @@ section#work-experience h1 {
 }
 
 // /----------------------------- Media 480 -------------------------------/
-@media only screen and (max-width:767px){
-  section#work-experience h1{
+@media only screen and (max-width: 767px) {
+  section#work-experience h1 {
     font-size: 40px;
   }
-  .timeline ul li:nth-child(odd){
-    float: none !important; 
-    width:100% !important
+  .timeline ul li:nth-child(odd) {
+    float: none !important;
+    width: 100% !important;
   }
-  .timeline ul li:nth-child(even){
-    float: right;  
-    width:100% !important
+  .timeline ul li:nth-child(even) {
+    float: right;
+    width: 100% !important;
   }
-  .timeline:before{
-    left:0;
-  }  
+  .timeline:before {
+    left: 0;
+  }
   .timeline ul li:nth-child(even) .time {
     left: 10px !important;
     top: -28px !important;
     text-align: left !important;
   }
-  .timeline ul li:nth-child(odd) .time{
-    left:12px !important;
-    top:-29px !important;
+  .timeline ul li:nth-child(odd) .time {
+    left: 12px !important;
+    top: -29px !important;
   }
-  .timeline ul li:nth-child(odd):before{
-    left:-14px;
+  .timeline ul li:nth-child(odd):before {
+    left: -14px;
   }
-  
+
   .timeline ul li:nth-child(odd) .content:before {
-    left:-20px;
+    left: -20px;
     right: 100% !important;
     border-right: 10px solid #fff;
-    
-   
-}
-  
-    
-    
+  }
 
-}
+  .timeline ul li:nth-child(1) .time {
+    right: 0 !important ;
+  }
 
+  .timeline ul li:nth-child(3) .time {
+    right: 0 !important ;
+  }
+
+  .timeline ul li:nth-child(odd) .time {
+    right: 0 !important;
+  }
+}
 
 // /----------------------------- Media 320 -------------------------------/
-@media only screen and (max-width:479px){
-    
-    
+@media only screen and (max-width: 479px) {
 }
-
-  
