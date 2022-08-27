@@ -59,3 +59,14 @@
     top: 435px;
   }
   /* Floating Social Media Bar Style Ends Here */
+
+  
+// /----------------------------- Media 480 -------------------------------/
+@media only screen and (max-width:767px){
+  .fl-fl{
+    width: 185px !important;
+  }
+  .fa{
+    margin-left: 2px!important;
+  }
+}

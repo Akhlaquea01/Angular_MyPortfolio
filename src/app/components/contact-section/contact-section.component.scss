@@ -14,16 +14,14 @@
 //       text-underline-position: under;
 //       color: rgb(238, 235, 235);
 //       letter-spacing: 2px;
-      
+
 //   }
 
-  
-
 //   #contact-section .container p{
-//     text-align: center; 
-//     width: 70%; 
+//     text-align: center;
+//     width: 70%;
 //     margin-left: auto;
-//      margin-right: auto; 
+//      margin-right: auto;
 //      padding-bottom: 3%;
 //      color: #fff;
 //      letter-spacing:3px;
@@ -32,7 +30,7 @@
 //   .contact-form i.fa{
 //     /* color: red; */
 //     /* color: #fff; */
-//     font-size: 22px; 
+//     font-size: 22px;
 //     padding: 3%;
 //     background-color: none;
 //     border-radius: 80%;
@@ -42,18 +40,18 @@
 //     border:2px solid rgb(190, 190, 190);
 //     color: rgb(190, 190, 190);
 //   }
-  
+
 //   .contact-form i.fa:hover{
 //     cursor: pointer;
 //     border:2px solid white;
 //     color: white;
 //   }
-   
+
 //     .contact-form{
 //       display: grid;
 //       grid-template-columns: auto auto;
 //        }
-    
+
 //     .form-info{
 //       font-size: 16px;
 //       font-style: italic;
@@ -73,10 +71,10 @@
 //     input::placeholder{
 //       color: white;
 //     }
-  
+
 //      textarea{
 //     padding: 10px;
-//     margin: 10px;     
+//     margin: 10px;
 //     width: 70%;
 //     background-color:rgba(136, 133, 133, 0.5);
 //     color: white;
@@ -85,7 +83,7 @@
 //    }
 //    textarea::placeholder{
 //      color: white;
-//    }  
+//    }
 //     .submit{
 //     width: 40%;
 //     background: none;
@@ -126,7 +124,6 @@
 
 // }
 /*bchdi*/
-
 
 .contact {
   position: relative;
@@ -195,7 +192,7 @@
   min-width: 67px;
   height: 67px;
   display: inline-block;
-  border-radius: 50%;  
+  border-radius: 50%;
   background-color: #7248ff;
   color: #fff;
   text-align: center;
@@ -293,53 +290,38 @@
   margin-top: 0.6rem;
 }
 
-
 // / RESPONSIVE CSS /
 
 // /----------------------------- Large Screens -------------------------------/
 
-
-@media only screen and (max-width :1700px) and (min-width: 1367px) {
-    
-    
-    
+@media only screen and (max-width: 1700px) and (min-width: 1367px) {
 }
 
-@media only screen and (max-width :1366px) and (min-width: 1281px) {
-
-    
-
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
 }
 
 // /----------------------------- Small Laptop -------------------------------/
-@media only screen and (max-width :1280px) and (min-width: 1101px) {
-    
-    
-
+@media only screen and (max-width: 1280px) and (min-width: 1101px) {
 }
 
 // /----------------------------- Media 1024 -------------------------------/
-@media only screen and (max-width :1100px){
-
-
-    
+@media only screen and (max-width: 1100px) {
 }
 
-
 // /----------------------------- Media 768 -------------------------------/
-@media only screen and (max-width:999px){
+@media only screen and (max-width: 999px) {
   .contact-box {
     grid-template-columns: 1fr;
     padding: 3.2rem 2.7rem;
-}
-.contact-form{
-  padding:0;
-  margin-top: 20px;
-}
+  }
+  .contact-form {
+    padding: 0;
+    margin-top: 20px;
+  }
 }
 
 // /----------------------------- Media 480 -------------------------------/
-@media only screen and (max-width:767px){
+@media only screen and (max-width: 767px) {
   .contact {
     padding: 8rem 0 5rem 0;
   }
@@ -358,6 +340,7 @@
   }
 
   .contact-form .row {
+    margin: 0 !important;
     grid-column-gap: 0.3rem;
   }
 
@@ -368,16 +351,9 @@
   }
   .contact-form .title {
     font-size: 40px;
+  }
 }
-    
-    
-
-}
-
 
 // /----------------------------- Media 320 -------------------------------/
-@media only screen and (max-width:479px){
-    
-    
+@media only screen and (max-width: 479px) {
 }
-
