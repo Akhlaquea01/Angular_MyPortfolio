@@ -24,35 +24,32 @@ SwiperCore.use([
 @Component({
   selector: 'app-testimonials-section',
   templateUrl: './testimonials-section.component.html',
-  styleUrls: ['./testimonials-section.component.scss'],  
+  styleUrls: ['./testimonials-section.component.scss'],
 })
 export class TestimonialsSectionComponent implements OnInit {
   screenHeight: number = 0;
   screenWidth: number = 0;
-  count = 3  
+  count = 3
   resizeObservable$: Observable<Event> | undefined
   resizeSubscription$: Subscription | undefined
 
   constructor() {
-    
+
   }
   ngOnInit(): void {
     this.responsiveScreens();
     this.resizeObservable$ = fromEvent(window, 'resize')
     this.resizeSubscription$ = this.resizeObservable$.subscribe(evt => {
-      this.responsiveScreens();      
+      this.responsiveScreens();
       console.log('event: ', evt)
     })
   }
-  responsiveScreens(){
+  responsiveScreens() {
     this.screenWidth = window.innerWidth;
-    if (this.screenWidth <= 360) {
-      this.count = 1
+    if (this.screenWidth <= 540) {
+      this.count = 1;
     }
-    else if (this.screenWidth <= 540) {
-      this.count = 2
-    }
-    else{
+    else {
       this.count = 3;
     }
   }
