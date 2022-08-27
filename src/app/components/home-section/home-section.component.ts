@@ -28,6 +28,6 @@ export class HomeSectionComponent implements OnInit {
 
   }
   public resumeDownload(){
-    window.open("https://drive.google.com/uc?id=1kLHFabZvOGt73KiFdBZGc5NolMugLaqN&export=download","_blank")
+    window.open("https://drive.google.com/uc?id=1kLHFabZvOGt73KiFdBZGc5NolMugLaqN&export=download","_blank");
   }
 }
