@@ -1,17 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Autoplay, SwiperOptions } from 'swiper';
-import { HostListener } from "@angular/core";
+import { Autoplay } from 'swiper';
 import { fromEvent, Observable, Subscription } from "rxjs";
-
-
 import SwiperCore, { EffectCoverflow, Pagination, } from "swiper";
-
-
-// install Swiper modules
-
-
-import Swiper from 'swiper';
-import { event } from 'jquery';
 
 SwiperCore.use([
   Pagination,
@@ -27,12 +17,30 @@ SwiperCore.use([
   styleUrls: ['./testimonials-section.component.scss'],
 })
 export class TestimonialsSectionComponent implements OnInit {
-  screenHeight: number = 0;
   screenWidth: number = 0;
   count = 3
   resizeObservable$: Observable<Event> | undefined
   resizeSubscription$: Subscription | undefined
-
+  testimonials=[
+    {
+      name:"Aman Abdullah",
+      imagePath:"assets/images/Aman.jpg",
+      relation:"Friend",
+      message:"You're very responsible and courageous. Seen you from beginning when you make up your mind about something, nothing stands in your way"
+    },
+    {
+      name:"Akanksha",
+      imagePath:"assets/images/Choti.jpg",
+      relation:"Schoolmate",
+      message:"Your ability to recall random facts at just right time is very impressive. You are working really hard will soon reach your goals."
+    },
+    {
+      name:"Ashab Alam",
+      imagePath:"assets/images/Ashab.png",
+      relation:"Senior",
+      message:"You're enthauthist very punctual and hard working. You're always learning new things and try to better yourself, which is awesome."
+    },
+  ]
   constructor() {
 
   }

@@ -1,195 +1,22 @@
-<!-- <div class="section-inner">
-	<div class="row justify-content-center">
-		<div class="col-md-8 wide-col-laptop">
-			<div class="title-block animate" >
-				<span>TESTIMONIALS</span>
-				<h2>what THEY SAY?</h2>
-			</div>
-			<div class="col-md-8 offset-md-2">
-				<div class="testimonials-section">
-					<div class="testimonials-slider owl-carousel">
-						<div class="item animate" >
-							<div class="testimonial-item">
-								<div class="client-row">
-									<img src="assets/images/Aman.jpg" class="rounded-circle" alt="profile 1">
-								</div>
-								<div class="testimonial-content">
-									<h4>Aman Abdullah</h4>
-									<p>"You're very responsible and courageous. Seen you from beginning when you make up your mind about
-										something, nothing stands in your way. You have improved yourself drastically."</p>
-									<span>Collegemate</span>
-								</div>
-							</div>
-						</div>
-						<div class="item animate" >
-							<div class="testimonial-item">
-								<div class="client-row">
-									<img src="assets/images/Ashab.png" class="rounded-circle" alt="profile 2">
-								</div>
-								<div class="testimonial-content">
-									<h4>Ashab Alam</h4>
-									<p>"You're very punctual and hard working. You're always learning new things and try to better
-										yourself, which is awesome."</p>
-									<span>Senior</span>
-								</div>
-							</div>
-						</div>
-						<div class="item animate" >
-							<div class="testimonial-item">
-								<div class="client-row">
-									<img src="assets/images/Choti.jpg" class="rounded-circle" alt="profile 3">
-								</div>
-								<div class="testimonial-content">
-									<h4>Akanksha</h4>
-									<p>"Your ability to recall random facts at just right time is very impressive. You are working really
-										hard will soon reach your goals."</p>
-									<span>Schoolmate</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-
-<!-- <section id="testimonial">
-	<div class="container">
-		<div class="heading white-heading">
-            Testimonial
-        </div>
-        <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="testimonial4_slide">
-                        <img src="assets/images/Aman.jpg" class="img-circle img-responsive" />
-                        <p>"You're very responsible and courageous. Seen you from beginning when you make up your mind about
-							something, nothing stands in your way. You have improved yourself drastically." </p>
-                        <h4>Aman Abdullah</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="testimonial4_slide">
-                        <img src="assets/images/Ashab.png" class="img-circle img-responsive" /><p>"You're very punctual and hard working. You're always learning new things and try to better
-							yourself, which is awesome." </p>
-                        <h4>Senior</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="testimonial4_slide">
-                        <img src="assets/images/Choti.jpg" class="img-circle img-responsive" />
-                        <p>"Your ability to recall random facts at just right time is very impressive. You are working really
-							hard will soon reach your goals." </p>
-                        <h4>Schoolmate</h4>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-	</div>
-
-</section> -->
-<section id ="testimonail">
+<section id="testimonail">
 	<div class="container">
 		<h1>Testimonial</h1>
-		<swiper [slidesPerView]="count" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-			 [navigation]="false" [spaceBetween]="10" class="mySwiper">
-			<ng-template data-swiper-autoplay="1000" swiperSlide>
+		<swiper [slidesPerView]="count" [autoplay]="{ delay: 3000, disableOnInteraction: false }" [navigation]="false"
+			[spaceBetween]="10" class="mySwiper">
+			<ng-template data-swiper-autoplay="1000" swiperSlide *ngFor="let reviewr of testimonials">
 				<div class="card swiper-slide">
 					<div class="image-content">
 						<span class="overlay"></span>
-
 						<div class="card-image">
-							<img src="assets/images/Aman.jpg" alt="" class="card-img">
+							<img src={{reviewr.imagePath}} alt={{reviewr.name}} class="card-img">
 						</div>
 					</div>
-
 					<div class="card-content">
-						<h2 class="name">Aman Abdullah</h2>
-						<p class="description">"You're very responsible and courageous. Seen you from beginning when you make up your mind about
-							something, nothing stands in your way.</p>
+						<h2 class="name">{{reviewr.name}}</h2>
+						<p class="description">{{reviewr.message}}</p>
 					</div>
 				</div>
 			</ng-template>
-			<ng-template data-swiper-autoplay="6000" swiperSlide><div class="card swiper-slide">
-				<div class="image-content">
-					<span class="overlay"></span>
-
-					<div class="card-image">
-						<img src="assets/images/Ashab.png" alt="" class="card-img">
-					</div>
-				</div>
-
-				<div class="card-content">
-					<h2 class="name">Senior</h2>
-					<p class="description">"You're enthauthist very punctual and hard working. You're always learning new things and try to better
-						yourself, which is awesome.</p>
-
-
-				</div>
-			</div></ng-template>
-			<ng-template data-swiper-autoplay="1000" swiperSlide><div class="card swiper-slide">
-				<div class="image-content">
-					<span class="overlay"></span>
-
-					<div class="card-image">
-						<img src="assets/images/Choti.jpg" alt="" class="card-img">
-					</div>
-				</div>
-
-				<div class="card-content">
-					<h2 class="name">Schoolmate</h2>
-					<p class="description">Your ability to recall random facts at just right time is very impressive. You are working really
-						hard will soon reach your goals.</p>
-
-
-				</div>
-			</div></ng-template>
-
-			<ng-template data-swiper-autoplay="6000" swiperSlide><div class="card swiper-slide">
-				<div class="image-content">
-					<span class="overlay"></span>
-
-					<div class="card-image">
-						<img src="assets/images/Ashab.png" alt="" class="card-img">
-					</div>
-				</div>
-
-				<div class="card-content">
-					<h2 class="name">Senior</h2>
-					<p class="description">"You're enthauthist very punctual and hard working. You're always learning new things and try to better
-						yourself, which is awesome.</p>
-
-
-				</div>
-			</div></ng-template>
-			<ng-template data-swiper-autoplay="6000" swiperSlide><div class="card swiper-slide">
-				<div class="image-content">
-					<span class="overlay"></span>
-
-					<div class="card-image">
-						<img src="assets/images/Ashab.png" alt="" class="card-img">
-					</div>
-				</div>
-
-				<div class="card-content">
-					<h2 class="name">Senior</h2>
-					<p class="description">"You're enthauthist very punctual and hard working. You're always learning new things and try to better
-						yourself, which is awesome.</p>
-
-
-				</div>
-			</div></ng-template>
-
-
-
 		</swiper>
 	</div>
 </section>
