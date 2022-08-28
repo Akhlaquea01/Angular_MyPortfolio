@@ -66,12 +66,12 @@ $animationSpeed: 40s;
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
+	height: 200px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	
-	
+
+
 	&::before,
 	&::after {
 		@include white-gradient;
@@ -81,7 +81,7 @@ $animationSpeed: 40s;
 		width: 200px;
 		z-index: 2;
 	}
-	
+
 	&::after {
 		right: 0;
 		top: 0;
@@ -92,16 +92,16 @@ $animationSpeed: 40s;
 		left: 0;
 		top: 0;
 	}
-	
+
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(250px * 14);
 	}
-	
+
 	.slide {
-		height: 100px;
-		width: 250px;
+		min-height: 100px;
+		min-width: 300px;
 	}
 }
 
@@ -111,21 +111,21 @@ $animationSpeed: 40s;
 
 
 @media only screen and (max-width :1700px) and (min-width: 1367px) {
-    
-    
-    
+
+
+
 }
 
 @media only screen and (max-width :1366px) and (min-width: 1281px) {
 
-    
+
 
 }
 
 // /----------------------------- Small Laptop -------------------------------/
 @media only screen and (max-width :1280px) and (min-width: 1101px) {
-    
-    
+
+
 
 }
 
@@ -133,7 +133,7 @@ $animationSpeed: 40s;
 @media only screen and (max-width :1100px){
 
 
-    
+
 }
 
 
@@ -148,16 +148,16 @@ $animationSpeed: 40s;
 	}
 	section#testimonail h1{
 		font-size:40px;
-		
+
 	}
-    
-    
+
+
 
 }
 
 
 // /----------------------------- Media 320 -------------------------------/
 @media only screen and (max-width:479px){
-    
-    
+
+
 }
