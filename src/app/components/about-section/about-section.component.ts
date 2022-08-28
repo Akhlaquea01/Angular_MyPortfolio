@@ -7,16 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-section.component.scss']
 })
 export class AboutSectionComponent implements OnInit {
-  public about = `Hello, I am Akhlaque, and I have completed my bachelor’s degree from A.K.T. University in September
-  2020. I am an ambitious and hardworking person with a year and a half of experience in Angular, Node and
-  Web technologies.
-  In addition, I can manage multiple tasks and work under pressure. Recently I completed my Angular
-  development, certifying for the Edureka e-learning platform and pursuing a Master's in Computer Science
-  with a specialization in
-  Software Engineering from Scaler.
-  My strengths are hard working, self motivating and dedicated towards my work. Also I'm a Quick
-  learner.In my free time, I enjoy going
-  out with friends. I also enjoy watching movies, Cycling, Web Surfing.`;
+  public about = `Hi, I'm Akhlaque, a passionate and hardworking web developer with experience in Node.js and Angular. After completing my Angular development training, I became certified for the Edureka e-learning platform and am pursuing a Master's degree in Computer Science with a specialization in Software Engineering from Scaler.
+  Work ethic, self-motivation, and dedication are some of my strengths. When I have free time, I enjoy socializing with friends.In addition, I am interested in watching movies, cycling, and surfing the web.`;
   public skills = [
     {
       name: "HTML",
