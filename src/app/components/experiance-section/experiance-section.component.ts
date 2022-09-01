@@ -10,7 +10,7 @@ public experience=[
   {
     CompanyName:"Zycus Infotech",
     designation:"Software Engineer",
-    joiningDate:new Date('September 14, 1999 12:00:00'),
+    joiningDate:new Date('February 14, 2021 12:00:00'),
     leavingDate:"Present",
     responsibilities:[
       "Detected vulnerabilities and code smells in code using the automatic code review tool SonarQube.",
