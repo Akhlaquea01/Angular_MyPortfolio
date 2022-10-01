@@ -7,24 +7,33 @@
 		<div class="collapse navbar-collapse flt-rt" id="navbarContent">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href='#slide02'>About </a>
+					<a class="nav-link" href='#slide02'>{{'header.About'| translate}} </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href='#slide03'> experience</a>
+					<a class="nav-link" href='#slide03'> {{'header.Experience'| translate}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href='#slide04'> skills</a>
+					<a class="nav-link" href='#slide04'> {{'header.Skills'| translate}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href='#slide05'>testimonial</a>
+					<a class="nav-link" href='#slide05'>{{'header.Testimonial'| translate}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href='#slide06'>work</a>
+					<a class="nav-link" href='#slide06'>{{'header.Work'| translate}}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href='#slide07'>Contact</a>
+					<a class="nav-link" href='#slide07'>{{'header.Contact'| translate}}</a>
 				</li>
 			</ul>
+
+			<div class="select">
+				<select name="language" id="language" [(ngModel)]="selected" (change)="changeLanguae($event)">
+
+					<option *ngFor="let language of languages" value={{language.code}}
+						[selected]="language.code == selected"> {{language.name}} </option>
+				</select>
+
+			</div>
 		</div>
 	</div>
 </nav>

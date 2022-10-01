@@ -1,0 +1,11 @@
+{
+    "header":{
+        "text":"Hindi Text",
+        "About": "विषय में",
+        "Experience": "अनुभव",
+        "Skills":"कौशल",
+        "Testimonial":"गुणों का वर्ण-पत्र",
+        "Work":"काम",
+        "Contact":"संपर्क करना"
+    }
+}

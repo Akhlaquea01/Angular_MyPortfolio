@@ -1,0 +1,11 @@
+{
+    "header": {
+        "text": "English Text",
+        "About": "About",
+        "Experience": "Experience",
+        "Skills":"Skills",
+        "Testimonial":"Testimonial",
+        "Work":"Work",
+        "Contact":"Contact"
+    }
+}

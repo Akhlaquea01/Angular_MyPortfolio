@@ -16,6 +16,8 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { SwiperModule } from "swiper/angular";
 import { MyInfoService } from './services/my-info.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { LangTranslateModule } from './lang-translate/lang-translate.module';
 
 @NgModule({
   declarations: [
@@ -36,8 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule,HttpClientModule ],
+  imports: [BrowserModule, AppRoutingModule, SwiperModule, HttpClientModule, FormsModule, LangTranslateModule],
   providers: [MyInfoService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
