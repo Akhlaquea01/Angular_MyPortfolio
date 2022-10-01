@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from '../common/modal.service';
 
 
 @Component({
@@ -71,12 +72,20 @@ export class AboutSectionComponent implements OnInit {
       docUrl: "https://api.jquery.com/"
     },
   ];
-  constructor() { }
 
-  ngOnInit(): void {
+  bodyText: string = '';
+  constructor(private modalService: ModalService) { }
 
+  ngOnInit() {
+    this.bodyText = 'This text can be updated in modal 1';
+  }
 
+  openModal(id: string) {
+    this.modalService.open(id);
+  }
 
+  closeModal(id: string) {
+    this.modalService.close(id);
   }
 
 }

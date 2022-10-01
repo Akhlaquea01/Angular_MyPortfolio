@@ -18,6 +18,7 @@ import { MyInfoService } from './services/my-info.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LangTranslateModule } from './lang-translate/lang-translate.module';
+import { ModalModule } from './components/common/modal.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LangTranslateModule } from './lang-translate/lang-translate.module';
 
 
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule, HttpClientModule, FormsModule, LangTranslateModule],
+  imports: [BrowserModule, AppRoutingModule, SwiperModule, HttpClientModule, FormsModule, LangTranslateModule,
+    ModalModule],
   providers: [MyInfoService],
   bootstrap: [AppComponent],
 })
