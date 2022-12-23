@@ -87,7 +87,7 @@ app-modal {
     &:after {
       content: '';
       position: absolute;
-      top: ($size - $thickness) / 2;
+      top: calc($size - $thickness) / 2;
       left: 0;
       right: 0;
       height: $thickness;
@@ -132,7 +132,7 @@ app-modal {
     &:hover,
     &:focus {
       transform: rotateZ(90deg);
-      background: hsl(216, 100, 40);
+      background: rgb(0, 82, 204);
     }
   
   }
